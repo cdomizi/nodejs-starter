@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -10,11 +11,16 @@ export default defineConfig({
       include: ["./src"],
       provider: "v8",
       reporter: ["text", "html"],
-      reportsDirectory: "./.yarn/.vitest/coverage",
+      reportsDirectory: "../.yarn/.vitest/coverage",
     },
     clearMocks: true,
     mockReset: true,
     reporters: ["verbose"],
     restoreMocks: true,
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
   },
 });

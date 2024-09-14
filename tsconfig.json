@@ -24,7 +24,7 @@
     /* Absolute Paths */
     "baseUrl": "./",
     "paths": {
-      "*": ["./src/*"]
+      "@/*": ["./src/*"]
     },
     /* Vitest globals */
     "types": ["vitest/globals"]
