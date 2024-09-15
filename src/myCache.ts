@@ -3,15 +3,6 @@ import type { MapValue } from "./types/types.js";
 export type TStore = Map<string, { value: unknown; duration: number | null }>;
 export type TStoreItem = readonly [string, MapValue<TStore>];
 
-const randomItems: TStoreItem[] = [
-  ["item1", { value: "Hello, World!", duration: 10 }],
-  ["item2", { value: 42, duration: null }],
-  ["item3", { value: { key: "value" }, duration: 5 }],
-  ["item4", { value: [1, 2, 3], duration: 20 }],
-];
-
-console.log(randomItems[0]);
-
 export function myCache() {
   const store: TStore = new Map();
 
