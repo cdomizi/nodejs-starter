@@ -11,7 +11,7 @@ export default defineConfig({
       include: ["./src"],
       provider: "v8",
       reporter: ["text", "html"],
-      reportsDirectory: "../.yarn/.vitest/coverage",
+      reportsDirectory: "./.yarn/.vitest/coverage",
     },
     clearMocks: true,
     mockReset: true,
