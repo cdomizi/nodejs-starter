@@ -29,5 +29,8 @@
     /* Vitest globals */
     "types": ["vitest/globals"]
   },
+  "ts-node": {
+    "transpileOnly": true
+  },
   "include": ["./src"]
 }
